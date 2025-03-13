@@ -1,18 +1,33 @@
+import java.util.Scanner;
+
 public class MathOperations {
-    int a;
-    int b;
-    int c;
 
     void multiply(int a,int b){
         System.out.println(a*b);
     }
+
     void multiply(int a,int b,int c){
         System.out.println(a*b*c);
     }
+    void add(int a,int b){
+        System.out.println(a+b);
+    }
+
+    void add(int a,int b,int c){
+        System.out.println(a+b+c);
+    }
+
 
     public static void main(String[] args) {
         MathOperations math=new MathOperations();
-       math.multiply(5,8);
-       math.multiply(7,9,3);
+        Scanner scan =new Scanner(System.in);
+        int a=scan.nextInt();
+        int b=scan.nextInt();
+        int c=scan.nextInt();
+        math.multiply(a,b);
+        math.multiply(a,b,c);
+        math.add(a,b);
+        math.add(a,b,c);
+
     }
 }
