@@ -3,7 +3,7 @@ package Generics;
 import java.util.Arrays;
 import java.util.List;
 
-public class Wildcard<I extends Number> {
+public class Wildcard<T extends Number> {
 
 
         private Object[] data;
