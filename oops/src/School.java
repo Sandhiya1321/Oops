@@ -1,6 +1,5 @@
 public interface School{
     void marks();
-
      interface Person{
         void marks();
     }
@@ -19,7 +18,6 @@ public interface School{
              System.out.println("name of the school name: "+schoolName);
 
          }
-
         @Override
         public void marks() {
             System.out.println("marks will be published soon");
